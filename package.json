@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/mafintosh/stream-shift/issues"
   },
-  "homepage": "https://github.com/mafintosh/stream-shift"
+  "homepage": "https://github.com/mafintosh/stream-shift",
+  "files": [
+    "index.js"
+  ]
 }
