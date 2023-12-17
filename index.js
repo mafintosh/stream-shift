@@ -11,9 +11,9 @@ function getStateLength (state) {
     // Since node 6.3.0 state.buffer is a BufferList not an array
     if (state.buffer.head) {
       return state.buffer.head.data.length
+    } else if (state.buffer.length > 0 && state.buffer[0]) {
+      return state.buffer[0].length
     }
-
-    return state.buffer[0].length
   }
 
   return state.length
