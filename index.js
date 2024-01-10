@@ -8,6 +8,7 @@ function shift (stream) {
 
 function getStateLength (state) {
   if (state.buffer.length) {
+    if (typeof Bun !== 'undefined') return state.buffer.length
     // Since node 6.3.0 state.buffer is a BufferList not an array
     if (state.buffer.head) {
       return state.buffer.head.data.length
